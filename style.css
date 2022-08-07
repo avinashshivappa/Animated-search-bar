@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.search-bar-container{
+    width: 300px;
+    height: 50px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3),
+    -6px -6px 10px rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    background-color: aliceblue;
+    position: relative;
+    padding: 5px;
+    transition: width 1.5s;
+
+}
+.magnifier-icon{
+    width: 20px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    
+}
+.mic-icon{
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: width 1s;
+    transition-delay: 0.5s;
+
+}
+.input{
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    border: none;
+    visibility: visible;
+    background-color: transparent;
+    color: darkgray;
+    outline: none;
+    margin: 10px 50px;
+    transition: width 1s;
+    transition-delay: 1s;
+}
+.active.search-bar-container{
+    width: 50px;
+}
+.active .input{
+    width: 0;
+}
+.active .mic-icon{
+    width: 0;
+}
