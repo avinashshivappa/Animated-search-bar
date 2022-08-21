@@ -43,7 +43,7 @@ body{
     border: none;
     visibility: visible;
     background-color: transparent;
-    color: darkgray;
+    color: rgb(204, 183, 183);
     outline: none;
     margin: 10px 50px;
     transition: width 1s;
